@@ -167,97 +167,103 @@
     flex-wrap: wrap;
 }
 
-.floor {
-    width: 23%;
-    border: 1px #00000047 solid;
-    text-align: center;
-}
-
-.floor img {
-    width: 100%;
-}
-
-.floor h3 {
-    font-size: 12px;
-}
-
-.floor p {
-    color: red;
-    font-size: 11px;
-}
-
-.floor .black {
-    color: black;
-    font-size: 12px;
-}
 
 .main-b{
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
-.main-c{
-    margin-top: 37px;
+.bath ,.commodes,.patient,.shower{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bath{
-    background-image:linear-gradient(rgba(0, 0, 255, 0.42),rgba(0, 0, 255, 0.115)
-    ), url(../image/bathlifts.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 60%;
-    height: 60vh;
-    text-align: left;
+    background-image: url(../image/bathlifts.jpg);
+ 
 }
 
 .patient{
-    background-image: linear-gradient(rgba(212, 63, 63, 0.62),rgba(239, 34, 34, 0.42)),url(../image/patienslift.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 60vh;
-    width: 38%;
-    text-align: left;
+    background-image: url(../image/patienslift.jpg);
+ 
 }
-
+    
 .commodes{
-    background-image: linear-gradient(rgba(212, 63, 63, 0.62),rgba(239, 34, 34, 0.42)),url(../image/toilet.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 60vh;
-    width: 38%;
-    text-align: left;
+    background-image: url(../image/toilet.jpg);
 }
 
 .shower{
-    background-image:linear-gradient(rgba(0, 0, 255, 0.42),rgba(0, 0, 255, 0.115)
-    ), url(../image/chair.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url(../image/chair.jpg);
+}
+
+.copy{
+    margin-top: 21px;
+}
+
+.width-sim{
     width: 60%;
-    height: 60vh;
-    text-align: left;
+    position: relative;
 }
-     
 
+.width-sim:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(46, 66, 208, 0.5);
+    display: block;
+    z-index: 1;
+}
 
-.bath h4 , .patient h4, .commodes h4, .shower h4{
-    font-size: 24px;
-    margin: 100px 0 18px 34px;  
+.width-diff{
+    width: 38%;
+    position: relative;
+}
+
+.width-diff::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0 ;
+    background-color: rgba(234, 43, 43, 0.494);
+    display: block;
+    z-index: 2;
+}
+
+.padd-com {
+    padding: 95px 46px;
+    min-height: 420px;
+}
+
+.light{
+    position: relative;
     color: white;
+    z-index: 2;
+    align-items: center;
 }
 
-
-.bath p ,.patient p, .commodes p, .shower p{
+.light button{
     color: white;
-    margin-left: 34px;
+    background-color: #2196f3e3;
+    width: 32%;
+    border: none;
+    height: 31px;
+    margin-top: 12px;
 }
 
-.hero{
-        background-color: white;
-        width: 32%;
-        border: none;
-        height: 31px;
-        margin-left: 36px;
+.width-diff button{
+    width: 52%;
 }
+
+.light h4{
+    font-size: 28px;
+    padding-bottom: 28px;
+}
+
 
 
 .maind{
@@ -270,12 +276,34 @@
         margin: 46px 0px 27px 45px;
 }
 
-.maind .floor h3{
-    padding-bottom: 12px;
+
+.floor {
+    padding: 12px;
+    width: 23%;
+    border: 1px #00000047 solid;
+    text-align: center;
 }
 
-.maind .floor{
-    height: 42vh;
+.floor img {
+    width: 100%;
+}
+
+.floor h3 {
+    font-size: 10px;
+}
+
+.floor p {
+    color: red;
+    font-size: 11px;
+}
+
+.floor .black {
+    color: black;
+    font-size: 12px;
+}
+
+.maind .floor h3{
+    padding-bottom: 12px;
 }
 
 footer{
@@ -323,6 +351,7 @@ footer{
 
 footer a,h6, footer p, footer h5, footer span, footer li {
     color: #fff;
+    text-decoration: none;
 
 }
 
@@ -387,3 +416,6 @@ footer a,h6, footer p, footer h5, footer span, footer li {
 .end span{
     color: #2626f8;
 }
+
+
+
